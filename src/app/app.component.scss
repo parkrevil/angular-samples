@@ -1,0 +1,21 @@
+nav {
+  @apply mt-5;
+
+  ul {
+    li {
+      span {
+        @apply block py-1;
+      }
+
+      a {
+        @apply block py-1;
+      }
+
+      ul {
+        li {
+          @apply ml-4;
+        }
+      }
+    }
+  }
+}

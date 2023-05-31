@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply w-full min-w-full max-w-full h-full min-h-full;
+}
+
+.caption {
+  @apply text-slate-700 font-extrabold text-sm;
+}

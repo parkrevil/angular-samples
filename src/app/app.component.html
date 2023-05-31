@@ -1,4 +1,63 @@
-<a routerLink="/" routerLinkActive="router-link-active">Home</a>
-<a routerLink="/reactive-forms" routerLinkActive="router-link-active">Reactive Form</a>
+<div class="flex flex-row w-full h-full pt-5">
+  <div class="flex flex-col h-full overflow-y-auto pl-5 w-52">
+    <header class="flex flex-row  space-x-4">
+      <h1 class="text-2xl font-bold">
+        <a routerLink="/">
+          Angular
+          <br>
+          Sample
+        </a>
+      </h1>
+    </header>
 
-<router-outlet></router-outlet>
+    <nav>
+      <section>
+        <span class="caption">Reactive Form</span>
+
+        <ul>
+          <li>
+            <a routerLink="/reactive-forms" routerLinkActive="router-link-active">Common</a>
+          </li>
+          <li>
+            <span>Dynamic Form</span>
+
+            <ul>
+              <li>
+                <a routerLink="/reactive-forms" routerLinkActive="router-link-active">Form Array</a>
+              </li>
+              <li>
+                <a routerLink="/reactive-forms" routerLinkActive="router-link-active">Form Group Array</a>
+              </li>
+              <li>
+                <a routerLink="/reactive-forms" routerLinkActive="router-link-active">Dynamic Form</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span>Validation</span>
+
+            <ul>
+              <li>
+                <a routerLink="/reactive-forms" routerLinkActive="router-link-active">Common</a>
+              </li>
+              <li>
+                <a routerLink="/reactive-forms" routerLinkActive="router-link-active">Custom Validator</a>
+              </li>
+              <li>
+                <a routerLink="/reactive-forms" routerLinkActive="router-link-active">Error State Matcher</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+
+  <div class="flex-1 h-full overflow-y-auto px-5">
+    <h3 class="text-4xl font-bold mb-2">
+      제목
+    </h3>
+
+    <router-outlet></router-outlet>
+  </div>
+</div>
